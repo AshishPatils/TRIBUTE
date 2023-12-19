@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+body
+{
+    background-color:red;
+}
+.main-containt{
+    height: 100%;
+    width: 80%;
+    margin: 4rem;
+}

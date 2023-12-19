@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDE page</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            
+        }
+
+        body
+        {
+            height: 100vh;
+         background: linear-gradient(
+            to right,
+            #1ac3b5 5%,         
+             #1ac3b5 20%,
+            #2c9eea 10%,
+            #2c9eea 100%);
+         
+                }
+        .main
+        {
+         
+         width: 900px;
+         height: 400px;             
+         margin: 40px;
+         display: grid;
+         grid-template-columns: repeat(4 ,1fr);
+         grid-gap: 5px;
+         grid-auto-rows: minmax ( 100px,auto) ;
+         
+
+         
+        }
+
+        .main > div
+        {
+            border: solid , 2px, black;
+            border-radius: 5px;
+            padding: 20px;
+            background: pink;
+
+        }
+        
+        
+        .three
+        {
+         
+        }
+        .four
+        {
+            grid-column-start:4; 
+            grid-column-end: 5;
+           grid-row-start:1;
+           grid-row-end:3;
+        }
+        .five
+        {
+           grid-row-start:2 ;
+           grid-row-end:4;
+        }
+        .six
+        {
+            grid-column-start:2 ;
+            grid-column-end:4;
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+   
+     
+    <div  class="main">
+        <div class="one"> one</div>
+        <div class="two"> two</div>
+        <div class="three"> three</div>
+        <div class="four"> four</div>
+        <div class="five"> five</div>
+        <div class="six"> six</div>
+        <div class="seven"> seven</div>
+        <div class="eight" >eight</div>
+        <div class="nine"> nine</div>
+        
+        
+        
+</div>     
+    >
+</body>
+</html>
